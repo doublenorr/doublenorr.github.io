@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Melody Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<nav class="navbar">
+        <div class="nav-logo"> Kanokporn.T</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile-layer">AboutMe</a></li>
+            <li><a href="#contact-layer">Contact</a></li>
+        </ul>
+    </nav>
+
+<section class="layer-1" id="home"> 
+    <div class="welcome-box">
+        <div class="video-wrapper">
+            <video src="video/791301306.888424.mp4" class="melody-welcome" autoplay muted loop playsinline></video>
+        </div>
+        <h1 id="typing-name"></h1>
+        <p>67050662 Kanokporn Thipwichai</p>
+    </div>
+</section>
+
+
+    <section class="layer-2" id="profile-layer">
+        <div class="profile-card">
+                      
+            <div class="image-wrapper">
+                <img src="image\S__9560070.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+
+            <div class="info">
+                <h1>กนกพร ทิพย์วิชัย</h1>
+                <p class="student-id">รหัสนักศึกษา: 67050662</p>
+                
+                <div class="details-box">
+                    <p><strong>คณะ:</strong> วิทยาศาตร์</p>
+                    <p><strong>สาขา:</strong> ฟิสิกส์อุตสหกรรมและวิศวกรรมระบบไอโอทีและสารสนเทศ</p>
+                    <p><strong>วันเกิด:</strong> [14/11/2005]</p>
+                    <p><strong>อีเมล:</strong> [67050662@kmitl.ac.th]</p>
+                </div>
+            </div>
+            <div class="music-player-wrapper">
+    <div class="music-container">
+        <p class="song-title">🎧 คนขี้เหงามักเจ้าชู้ - Four-Mod</p>
+        
+        <button id="musicBtn" class="music-control-btn" onclick="toggleMusic()">
+            <span id="musicStatus">🎀 Play Music</span>
+        </button>
+        
+        <div class="music-deco-dots">✨ ♪ ♫ ✨</div>
+    </div>
+</div>
+    </section>
+    <section class="layer-3" id="contact-layer">
+    <div class="contact-card">
+        <h2>Contact Me 🌸</h2>
+        <div class="contact-buttons">
+            
+            <a href="https://www.instagram.com/justyournormor/" target="_blank" class="contact-item ig-btn">
+                <div class="text">
+                    <span>Instagram</span>
+                    <p>@justyournormor</p>
+                </div>
+            </a>
+            <a href="mailto:67050662@kmitl.ac.th" class="contact-item mail-btn">
+                <div class="text">
+                    <span>Email Address</span>
+                    <p>67050662@kmitl.ac.th</p>
+                </div>
+            </a>
+
+        </div>
+        <p class="thank-you">Thank you for visiting my space! ✨</p>
+    </div>
+</section>
+            
+
+    <audio id="bgMusic" loop>
+        <source src="song/791298392.877352.mp3" type="audio/mpeg">
+    </audio>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
