@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Mali', cursive;
+    background-color: #FFF0F5;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.nav-logo {
+    color: #5D4037; 
+    font-weight: bold;
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5D4037;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: #FF69B4; }
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.layer-1 { background: linear-gradient(#FFF0F5, #FFD1DC); }
+.layer-2 { background-color: #FFD1DC; padding: 80px 0; }
+.video-wrapper, .image-wrapper {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 8px solid #FFB6C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.image-wrapper { border-radius: 50%; width: 180px; height: 180px; }
+
+.melody-welcome, .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 40px;
+    width: 360px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+}
+
+.details-box {
+    text-align: left;
+    background: #FFF5F7;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px dashed #FFB6C1;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.music-container {
+    background: #FFF5F7;
+    border: 2px solid #FFD1DC;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.pink-btn {
+    background: #FFB6C1;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Mali';
+    box-shadow: 0 4px 0 #FF91A4;
+}
+#typing-name {
+    color: #FF69B4;
+    font-size: 2rem;
+    border-right: 3px solid #5D4037; 
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-caret 0.75s step-end infinite;
+    margin: 10px 0;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #5D4037 }
+}
